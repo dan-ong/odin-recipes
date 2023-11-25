@@ -1,7 +1,77 @@
-* {
-    font-family: sans-serif;
+html {
+    box-sizing: border-box;
+    line-height: 1.225;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-h1, h2 {
+* {
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+body.yeahnah {
+    background-color: #484f58;
+}
+
+.header {
     background-color: lightgray;
+    border: 1px solid;
+    padding: 4px 8px;
+}
+
+.container {
+    display: block;
+    width: 810px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.col {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.left-row {
+    margin-right: 8px;
+}
+
+.right-row {
+    margin-left: 8px;
+}
+
+.left-row, .right-row {
+    border: 1px solid;
+}
+
+.row-heading {
+    padding: 4px 7px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
+
+.inner {
+    padding: 4px 7px;
+}
+
+.row-heading > h4 {
+    margin: 0;
 }
